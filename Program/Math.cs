@@ -2,12 +2,12 @@ namespace simple_project_cs
 {
     public class Math
     {
-        public static int add(int a, int b)
+        public static int Add(int a, int b)
         {
             return a + b;
         }
 
-        public static int sub(int a, int b)
+        public static int Sub(int a, int b)
         {
             return a - b;
         }

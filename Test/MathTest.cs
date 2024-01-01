@@ -11,7 +11,7 @@ namespace Test
             int a = 5;
             int b = 10;
             int expected = 15;
-            int actual = Math.add(a, b);
+            int actual = Math.Add(a, b);
             Assert.Equal(expected, actual);
         }
 
@@ -21,7 +21,7 @@ namespace Test
             int a = 5;
             int b = 10;
             int expected = -5;
-            int actual = Math.sub(a, b);
+            int actual = Math.Sub(a, b);
             Assert.Equal(expected, actual);
         }
     }
