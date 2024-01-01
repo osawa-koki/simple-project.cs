@@ -17,8 +17,8 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore Program
     - name: Build
-      run: dotnet build Program --no-restore
+      run: dotnet build Program --no-restore --configuration Release --verbosity normal
     - name: Publish
-      run: dotnet publish Program --no-build --verbosity normal --configuration Release --output ./bin/Release/net6.0/publish/
+      run: dotnet publish Program --no-build --configuration Release --verbosity normal --output ./bin/Release/net6.0/publish/
     - name: Exec
       run: dotnet ./bin/Release/net6.0/publish/Program.dll
